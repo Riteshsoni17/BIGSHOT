@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigShot - African Herbs for Men's Wellness</title>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID'); // Replace with your Pixel ID
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Google Tag Manager (Optional) -->
+    <!-- Add GTM code here if using -->
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* Top Banner */
+        .top-banner {
+            background: linear-gradient(90deg, #FFA500 0%, #FF8C00 100%);
+            color: #000000;
+            padding: 8px 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .top-banner-scroll {
+            display: inline-block;
+            animation: scroll 15s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* Free Consultation Banner */
+        .consultation-banner {
+            background-color: #1a1a1a;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        
+        .call-button {
+            background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+            color: #000000;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 165, 0, 0.4);
+        }
+        
+        .call-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 165, 0, 0.6);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background-color: #0a0a0a;
+            padding: 40px 20px;
+        }
+        
+        .product-image-container {
+            max-width: 500px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Rating Stars */
+        .rating-stars {
+            color: #FFA500;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        /* Section Headings */
+        .section-heading {
+            color: #FFA500;
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        
+        /* Dark Section */
+        .dark-section {
+            background-color: #0a0a0a;
+            padding: 60px 20px;
+        }
+        
+        .gray-section {
+            background-color: #1a1a1a;
+            padding: 60px 20px;
+        }
+        
+        /* Feature Cards */
+        .feature-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            background-color: #252525;
+            border-color: #FFA500;
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        /* Advantage List */
+        .advantage-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #0a0a0a;
+            border-left: 4px solid #FFA500;
+            border-radius: 8px;
+        }
+        
+        .checkmark {
+            color: #FFA500;
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+        
+        /* Review Section */
+        .review-card {
+            background-color: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .reviewer-name {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .review-stars {
+            color: #FFA500;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #FFA500;
+        }
+        
+        /* Sticky Button */
+        .sticky-button {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #000000;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            border-top: 2px solid #FFA500;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Form Section */
+        .form-container {
+            background-color: #1a1a1a;
+            border: 2px solid #FFA500;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            background-color: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #FFA500;
+        }
+        
+        .submit-button {
+            width: 100%;
+            background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+            color: #000000;
+            padding: 18px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 165, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Scrolling Banner -->
+    <div class="top-banner">
+        <div class="top-banner-scroll">
+            पॉवर, जोश और टाइमिंग बढ़ाएं • पुरुषों की पहली पसंद • पॉवर, जोश और टाइमिंग बढ़ाएं • पुरुषों की पहली पसंद
+        </div>
+    </div>
+
+    <!-- Free Consultation Banner -->
+    <div class="consultation-banner">
+        <p class="text-white text-lg mb-3 font-semibold">Free Consultation</p>
+        <a href="tel:+919993662045" class="call-button">
+            📞 Call Now : 9993662045
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="max-w-6xl mx-auto">
+            <!-- Product Image -->
+            <div class="product-image-container">
+                <img src="https://cdn.shopify.com/s/files/1/0918/6479/3460/files/BIGSHOTCALLPAGE-removebg-preview.png?v=1762806256" 
+                     alt="BigShot Product" 
+                     class="w-full">
+            </div>
+            
+            <!-- Main Content -->
+            <div class="text-center px-4">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                    पॉवर, जोश और<br>टाइमिंग बढ़ाएं
+                </h1>
+                
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    BigShot<br>
+                    <span class="text-2xl font-semibold">(AFRICAN HERBS)</span>
+                </h2>
+                
+                <!-- Rating -->
+                <div class="mb-6">
+                    <p class="text-lg font-semibold mb-2">Rating:</p>
+                    <div class="rating-stars mb-2">★★★★★</div>
+                    <p class="text-gray-300">4.8 Rating By 58040 Users</p>
+                </div>
+                
+                <!-- Description -->
+                <p class="text-lg md:text-xl leading-relaxed mb-6 text-gray-300">
+                    दुनिया का बेहतरीन <strong class="text-white">Men's Wellness</strong> फॉर्मूला, जो आपकी पॉवर, ऊर्जा, जोश, टाइमिंग और संपूर्ण सेहत को प्राकृतिक रूप से बेहतर बनाने में मदद करता है।
+                </p>
+                
+                <p class="text-base md:text-lg leading-relaxed mb-6 text-gray-400">
+                    अफ्रीकन सुपर जड़ी-बूटियों से भरपूर, <strong class="text-white">BigShot</strong> उन पुरुषों की पसंद है जो अपनी सेहत की जिम्मेदारी खुद लेना चाहते हैं।
+                </p>
+                
+                <p class="text-sm md:text-base leading-relaxed mb-8 text-gray-500 italic">
+                    World's best Men's Wellness formula designed to boost your vitality, energy, and overall well-being naturally. Powered by African Super Herbs, BigShot is trusted choice for Men who want to take charge of their personal health.
+                </p>
+                
+                <!-- CTA Button -->
+                <a href="tel:+919993662045" class="call-button inline-flex">
+                    CALL NOW
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Views Section (Video Placeholder) -->
+    <section class="gray-section">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-heading">Expert Views</h2>
+            
+            <div class="bg-black rounded-2xl overflow-hidden" style="aspect-ratio: 16/9; max-width: 800px; margin: 0 auto;">
+                <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">▶️</div>
+                        <p class="text-2xl font-bold">HOW TO</p>
+                        <p class="text-4xl font-black text-yellow-400">GROW?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="tel:+919993662045" class="call-button inline-flex">
+                    CALL NOW
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is BigShot Section -->
+    <section class="dark-section">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="section-heading">What is BigShot?</h2>
+            
+            <div class="text-center">
+                <p class="text-lg leading-relaxed mb-6 text-gray-300">
+                    BigShot is a trusted men's health supplement made from powerful African herbs. Designed to naturally boost your vitality, energy, and enhance overall male performance, BigShot has helped millions of men worldwide. Now available in India, blending the time-honored wisdom of African herbs with your modern-day needs.
+                </p>
+                
+                <div class="text-8xl my-12">
+                    ♂️
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="gray-section">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="section-heading">Why Choose BigShot Over Other Men's Health Supplements?</h2>
+            
+            <p class="text-center text-lg text-gray-300 mb-12">
+                Choosing the right men's health supplement can be overwhelming, but here's why BigShot stands out:
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Trusted Worldwide</h3>
+                    <p class="text-gray-400">BigShot को दुनिया भर में लाखों लोगों ने इस्तेमाल किया और उनकों फायदा मिला।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">100% Natural Ingredients</h3>
+                    <p class="text-gray-400">BigShot शक्तिशाली अफ़्रीकी जड़ी बूटियों से मिलकर बना हैं। यह 100% नेचुरल हैं।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Multi-Action Formula</h3>
+                    <p class="text-gray-400">यह आपकी केवल पावर, शक्ति और ऊर्जा ही नहीं, टाइमिंग भी बढ़ाता है।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Ancient knowledge with Modern Formula</h3>
+                    <p class="text-gray-400">BigShot प्राचीन जड़ी बूटियों और मॉडर्न साइंस से मिलकर बना हैं।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Safe and Gentle</h3>
+                    <p class="text-gray-400">यह फार्मूला आपको बिना किसी साइड इफ़ेक्ट के पुरे results देता हैं।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Proven Results</h3>
+                    <p class="text-gray-400">58,000+ संतुष्ट ग्राहकों द्वारा सत्यापित प्रभावी परिणाम।</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="tel:+919993662045" class="call-button inline-flex">
+                    CALL NOW
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Image with Benefits -->
+    <section class="dark-section">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <img src="https://cdn.shopify.com/s/files/1/0918/6479/3460/files/BIGSHOTCALLPAGE-removebg-preview.png?v=1762806256" 
+                     alt="BigShot" 
+                     class="w-full max-w-md mx-auto mb-8">
+                
+                <a href="tel:+919993662045" class="call-button inline-flex mb-12">
+                    CALL NOW
+                </a>
+            </div>
+            
+            <h2 class="section-heading">Advantages</h2>
+            
+            <p class="text-center text-lg text-gray-300 mb-8">
+                Our Men's health supplements offer a range of benefits designed to improve your overall Men's wellness:
+            </p>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="advantage-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <p class="font-bold text-lg mb-2">पॉवर में बढ़ावा:</p>
+                        <p class="text-gray-400">आपके शरीर में पॉवर को बढ़कर्तर रखता है और हमेशा घर्तिश्य रखता है।</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <p class="font-bold text-lg mb-2">ऊर्जा की बढ़ोतरी:</p>
+                        <p class="text-gray-400">शरीर में ऊर्जा को बढ़कर्तर रखता है।</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <p class="font-bold text-lg mb-2">इच्छा शक्ति में बढ़ोतरी:</p>
+                        <p class="text-gray-400">इच्छा और जुनून को दोबारा जगाता है।</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <p class="font-bold text-lg mb-2">ज्यादा ऊर्जा और स्टैमिना:</p>
+                        <p class="text-gray-400">दिन और रात दोनों समय आपको एक्टिव और एनर्जेटिक रखता है।</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <p class="font-bold text-lg mb-2">टाइमिंग बढ़ाता है:</p>
+                        <p class="text-gray-400">BigShot आपकी टाइमिंग को नेचुरल तरीके से बूस्ट करता है।</p>
+                    </div>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <p class="font-bold text-lg mb-2">कॉन्फिडेंस बूस्टर:</p>
+                        <p class="text-gray-400">BigShot कॉन्फिडेंस बूस्टर की तरह आपके कॉन्फिडेंस को हमेशा टॉप पर रखता है।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="gray-section">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-black text-center mb-12 text-white">
+                HOW TO USE<br>
+                <span class="text-yellow-400">BIGSHOT</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="bg-white rounded-3xl p-8 mb-4 inline-block">
+                        <img src="https://cdn.shopify.com/s/files/1/0918/6479/3460/files/BIGSHOTCALLPAGE-removebg-preview.png?v=1762806256" 
+                             alt="Step 1" 
+                             class="w-32 h-32 object-contain">
+                    </div>
+                    <div class="text-6xl font-black mb-2">①</div>
+                    <p class="text-red-500 font-bold text-lg">1 SCOOP BIGSHOT</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white rounded-3xl p-8 mb-4 inline-block">
+                        <div class="text-8xl">💧</div>
+                    </div>
+                    <div class="text-6xl font-black mb-2">②</div>
+                    <p class="text-red-500 font-bold text-lg">200ML OF<br>WATER OR MILK</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white rounded-3xl p-8 mb-4 inline-block">
+                        <div class="text-8xl">🥤</div>
+                    </div>
+                    <div class="text-6xl font-black mb-2">③</div>
+                    <p class="text-red-500 font-bold text-lg">READY TO DRINK</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="tel:+919993662045" class="call-button inline-flex">
+                    CALL NOW
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="dark-section">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="section-heading">999+ Reviews</h2>
+            
+            <div class="text-center mb-12">
+                <div class="rating-stars mb-4">★★★★★</div>
+                <p class="text-2xl font-bold mb-8">4.7 Rating Out of 5</p>
+                
+                <!-- Rating Bars -->
+                <div class="max-w-md mx-auto space-y-3 mb-12">
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-500">★</span>
+                        <span class="font-bold">5</span>
+                        <div class="flex-1 h-4 bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-500">★</span>
+                        <span class="font-bold">4</span>
+                        <div class="flex-1 h-4 bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500" style="width: 45%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-500">★</span>
+                        <span class="font-bold">3</span>
+                        <div class="flex-1 h-4 bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500" style="width: 15%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-500">★</span>
+                        <span class="font-bold">2</span>
+                        <div class="flex-1 h-4 bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500" style="width: 8%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-500">★</span>
+                        <span class="font-bold">1</span>
+                        <div class="flex-1 h-4 bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500" style="width: 5%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review Cards -->
+            <div class="space-y-6">
+                <div class="review-card">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-2xl">
+                            👤
+                        </div>
+                        <div>
+                            <p class="reviewer-name">Ashwini Gupta</p>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        BigShot lene ke baad performance aur stamina dono mein improvement feel hua. Aaj ise use karte huye mujhe 1 mahina ho gaya, testosterone level aur energy dono mein difference dikha.
+                    </p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-2xl">
+                            👤
+                        </div>
+                        <div>
+                            <p class="reviewer-name">Shreesh Sharma</p>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        It's made with ayurvedic herbs- Safe and Natural.
+                    </p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-2xl">
+                            👤
+                        </div>
+                        <div>
+                            <p class="reviewer-name">Deepak Sahu</p>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        There is no side effect, it's natural. This Product increased my testosterone levels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="gray-section">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="faq-item">
+                    <p class="faq-question">क्या BigShot इस्तेमाल करना सुरक्षित है?</p>
+                    <p class="text-gray-300 mb-2">हाँ, BigShot में प्राकृतिक जड़ी-बूटियां होती हैं और यह ज़्यादातर लोगों के लिए सुरक्षित है।</p>
+                    <p class="text-gray-500 text-sm italic">Yes! BigShot is made with natural herbs and is safe for most men.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">नतीजे दिखने में कितना टाइम लगता है?</p>
+                    <p class="text-gray-300 mb-2">अधिकतर लोगों को 2 से 4 हफ्ते में फर्क महसूस होने लगता है।</p>
+                    <p class="text-gray-500 text-sm italic">Most men start seeing improvements from very first dose.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">क्या मैं इसे रोज़ ले सकता हूँ?</p>
+                    <p class="text-gray-300 mb-2">हाँ, रोज़ाना बताए गए मात्रा में लेने से सबसे अच्छा फायदा मिलता है।</p>
+                    <p class="text-gray-500 text-sm italic">Absolutely. For best results, take BigShot daily as per the recommended dosage.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">क्या इसके कोई साइड इफेक्ट होते हैं?</p>
+                    <p class="text-gray-300 mb-2">नहीं। कुछ हल्के साइड इफेक्ट हो सकते हैं अगर ज़्यादा लें। इसलिए निर्देश अनुसार ही लें।</p>
+                    <p class="text-gray-500 text-sm italic">BigShot is generally well-tolerated. Mild side effects are rare and usually related to overdose.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">क्या ये फर्टिलिटी (बच्चे पैदा करने की क्षमता) बढ़ाता है?</p>
+                    <p class="text-gray-300 mb-2">हाँ, इसमें ऐसे हर्ब्स हैं जो शुक्राणु की संख्या और ताकत बढ़ाने में मदद करते हैं।</p>
+                    <p class="text-gray-500 text-sm italic">Yes, it contains herbs traditionally used to boost sperm count and motility.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">BigShot भारत में कहाँ से खरीदें?</p>
+                    <p class="text-gray-300 mb-2">आप इसे ऑफिशियल वेबसाइट से ऑनलाइन खरीद सकते हैं या हमें कॉल करें।</p>
+                    <p class="text-gray-500 text-sm italic">You can purchase BigShot online or call us now at +91 9993662045</p>
+                </div>
+                
+                <div class="faq-item">
+                    <p class="faq-question">क्या ये हर उम्र के पुरुषों के लिए सही है?</p>
+                    <p class="text-gray-300 mb-2">हाँ, ये हर उम्र के पुरुषों की सेहत और हार्मोन संतुलन के लिए अच्छा है।</p>
+                    <p class="text-gray-500 text-sm italic">BigShot is specifically designed to support men's health and hormonal balance at any age.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="dark-section">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="section-heading mb-12">Order Now</h2>
+            
+            <div class="form-container">
+                <h3 class="text-2xl font-bold text-center mb-8 text-white">
+                    पॉवर, जोश और टाइमिंग बढ़ाने के लिए<br>
+                    अभी ऑर्डर करें!
+                </h3>
+                
+                <form onsubmit="handleFormSubmit(event)">
+                    <input 
+                        type="text" 
+                        name="name"
+                        placeholder="आपका नाम *" 
+                        required
+                        class="form-input"
+                    >
+                    
+                    <input 
+                        type="tel" 
+                        name="phone"
+                        placeholder="मोबाइल नंबर *" 
+                        pattern="[0-9]{10}"
+                        required
+                        class="form-input"
+                    >
+                    
+                    <input 
+                        type="text" 
+                        name="city"
+                        placeholder="पता (शहर) *" 
+                        required
+                        class="form-input"
+                    >
+                    
+                    <button type="submit" class="submit-button">
+                        🚀 ORDER NOW
+                    </button>
+                    
+                    <p class="text-center text-sm text-gray-400 mt-4">
+                        🔒 आपकी जानकारी 100% सुरक्षित है
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gray-section border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-black mb-4 text-yellow-400">BigShot</h3>
+            <p class="text-gray-400 mb-8 text-lg">
+                African Herbs for Men's Wellness
+            </p>
+            
+            <div class="bg-black border border-gray-700 rounded-xl p-6 mb-8">
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    <strong class="text-yellow-400">⚠️ Disclaimer:</strong> यह साइट केवल जानकारी प्रदान करने के लिए है। किसी भी सप्लीमेंट का उपयोग करने से पहले डॉक्टर की सलाह ज़रूर लें। परिणाम व्यक्ति पर निर्भर करते हैं। यह उत्पाद किसी बीमारी का इलाज, निदान या रोकथाम नहीं करता।
+                </p>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6">
+                <p class="text-gray-400 text-lg mb-4">📞 संपर्क करें: +91 9993662045</p>
+                <p class="text-gray-600 text-sm">© 2025 BigShot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom Button -->
+    <div class="sticky-button">
+        <a href="tel:+919993662045" class="call-button inline-flex">
+            📞 CALL NOW - 9993662045
+        </a>
+    </div>
+    
+    <!-- Add padding to bottom of body to account for sticky button -->
+    <div style="height: 80px;"></div>
+
+    <script>
+        // Track Call Button Clicks
+        function trackCallClick() {
+            // Facebook Pixel Event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Contact');
+            }
+            
+            // Google Analytics Event (if using)
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'call_button_click', {
+                    'event_category': 'engagement',
+                    'event_label': 'call_now_button'
+                });
+            }
+            
+            // Console log for testing
+            console.log('Call button clicked - Event tracked');
+        }
+        
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const name = e.target.name.value;
+            const phone = e.target.phone.value;
+            const city = e.target.city.value;
+            
+            // Track Lead Event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'BigShot Order Form',
+                    content_category: 'Form Submission',
+                    value: 2499,
+                    currency: 'INR'
+                });
+            }
+            
+            // You can send this data to your backend/CRM here
+            // Example: 
+            // fetch('your-backend-url/api/leads', {
+            //     method: 'POST',
+            //     body: JSON.stringify({ name, phone, city })
+            // });
+            
+            alert(`धन्यवाद ${name}! हम जल्द ही आपसे ${phone} पर संपर्क करेंगे।`);
+            
+            // Optional: Redirect to call
+            window.location.href = 'tel:+919993662045';
+        }
+
+        // Add click tracking to all call buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const callButtons = document.querySelectorAll('a[href^="tel:"]');
+            callButtons.forEach(button => {
+                button.addEventListener('click', trackCallClick);
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
